@@ -1,1 +1,93 @@
 /* You can add global styles to this file, and also import other style files */
+.inside__input--button {
+    position: absolute;
+    font-size: 10px;
+    right: 13px;
+    top:30%;
+    cursor: pointer;
+    user-select: none;
+  }
+ .result__under--text {
+    position: absolute;
+    font-size: 12px;
+    left: 0px;
+    bottom: -50%;
+    cursor: pointer;
+    user-select: none;
+ }
+
+ .form__section {
+     width: 30%;
+     margin: 10% auto;
+ }
+ .input__field--row {
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1.25rem;
+    transition: all .3s ease-in-out;
+
+   label {
+       width: 100%;
+       margin-bottom: 0.4rem;
+       margin-top: .3125rem;
+       font-size: .84em;
+       font-family: 'Helvetica';
+   } 
+   .input__wrapper {
+       width: 100%;
+
+       input {
+           width: 100%;
+       }
+
+       input, select {
+        height: 2.6rem;
+        width: 100%;
+        background-color: #fff;
+        border: 1px solid #edeff2;
+        border-radius: 4px;
+        box-sizing: border-box;
+        color: #6c7884;
+        display: inline-block;
+        font-size: .85rem;
+        font-weight: 400;
+        max-height: 50px;
+        letter-spacing: .01rem;
+        margin: 0;
+        max-width: 100%;
+        overflow: visible;
+        padding: 0 14px;
+        transition: color .2s ease-in-out;
+        vertical-align: middle;
+        line-height: 1.15;
+        font-family: 'Helvetica';
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+    input:focus, select:focus {
+            border-color: turquoise;
+            outline: 0;
+        }
+
+
+
+        select {
+            background-image: url("./assets/chevron_down.svg");
+            background-position: calc(100% - 12px) 50%;
+            background-size: 15px;
+            background-repeat: no-repeat;
+            cursor: pointer;
+            color: #333d47;
+           
+         
+        }
+   }
+}
+
+fieldset {
+    padding: 0;
+    border: 0;
+}
+ 
